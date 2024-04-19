@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="headpart">
+        <h2>User Details</h2>
+    </div>
+
+    <div class="card">
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage and display it
+        document.getElementById("name").textContent = localStorage.getItem("name");
+        document.getElementById("phone").textContent = localStorage.getItem("phone");
+        document.getElementById("email").textContent = localStorage.getItem("email");
+    </script>
+
+    User Data Entered Successfully
+</body>
+</html>
